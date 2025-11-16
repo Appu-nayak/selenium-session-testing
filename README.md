@@ -1,47 +1,61 @@
-🚀 <strong>Session Management & Cookie Handling Automation (Java + Selenium)</strong>
+<h1>🚀 Session Management & Cookie Handling Automation (Java + Selenium)</h1>
 
-Automated end-to-end testing framework built using <strong>Java, Selenium WebDriver, Maven, and JUnit 5</strong> to validate login flow, session creation, cookie handling, session expiration, and logout behavior of a sample web application.
-
-<hr/>
-<strong>🔧 Tech Stack</strong>
-<table> <tr> <td><strong>Java</strong></td> <td>Core programming language</td> </tr> <tr> <td><strong>Selenium WebDriver</strong></td> <td>Browser automation</td> </tr> <tr> <td><strong>JUnit 5</strong></td> <td>Test execution & assertions</td> </tr> <tr> <td><strong>Maven</strong></td> <td>Build & dependency management</td> </tr> <tr> <td><strong>WebDriverManager</strong></td> <td>Automatic driver handling</td> </tr> </table> <hr/>
-<strong>✨ Features</strong>
-<strong>✔ Login Scenarios</strong>
-
-Valid login
-
-Invalid login
-
-Login without cookies
-
-Fake session cookie injection
-
-<strong>✔ Session Management</strong>
-
-Detect session cookies
-
-Simulate session expiry by deleting cookies
-
-Validate access restrictions after expiry
-
-<strong>✔ Logout Verification</strong>
-
-Verify session cookie is removed
-
-Ensure user is redirected to login page
-
-<strong>✔ Framework Design</strong>
-
-Page Object Model (POM) architecture
-
-Reusable utility modules (CookieUtils, StorageUtils)
-
-Centralized configuration (BASE_URL, cookie names, locators)
-
-Compatible with multiple Chrome versions
+<p>
+This project implements an automated test suite using <strong>Java</strong>, 
+<strong>Selenium WebDriver</strong>, <strong>JUnit 5</strong>, and <strong>Maven</strong> to validate 
+login flow, session creation, cookie handling, session expiration, and logout behavior of a web application.
+</p>
 
 <hr/>
-<strong>📁 Project Structure</strong>
+
+<h2>🔧 Tech Stack</h2>
+
+<table>
+<tr><td><strong>Java</strong></td><td>Core programming language</td></tr>
+<tr><td><strong>Selenium WebDriver</strong></td><td>Browser automation</td></tr>
+<tr><td><strong>JUnit 5</strong></td><td>Test execution & assertions</td></tr>
+<tr><td><strong>Maven</strong></td><td>Build & dependency management</td></tr>
+<tr><td><strong>WebDriverManager</strong></td><td>Automatic ChromeDriver handling</td></tr>
+</table>
+
+<hr/>
+
+<h2>✨ Features</h2>
+
+<h3>✔ Login Scenarios</h3>
+<ul>
+<li>Valid login</li>
+<li>Invalid login</li>
+<li>Login without cookies</li>
+<li>Fake session cookie injection</li>
+</ul>
+
+<h3>✔ Session Management</h3>
+<ul>
+<li>Detect session cookies</li>
+<li>Simulate session expiry by deleting cookies</li>
+<li>Validate blocked access after expiry</li>
+</ul>
+
+<h3>✔ Logout Verification</h3>
+<ul>
+<li>Verify session cookie removal</li>
+<li>Ensure user is redirected to login page</li>
+</ul>
+
+<h3>✔ Framework Design</h3>
+<ul>
+<li>Page Object Model (POM)</li>
+<li>Reusable utility modules (CookieUtils, StorageUtils)</li>
+<li>Central configuration for BASE_URL and cookie name</li>
+<li>Browser handled via WebDriverManager</li>
+</ul>
+
+<hr/>
+
+<h2>📁 Project Structure</h2>
+
+<pre>
 session-management-tests
 │── src
 │   └── main/java/com/example/sessiontest
@@ -61,32 +75,27 @@ session-management-tests
 │── pom.xml
 │── .gitignore
 │── README.md
-
+</pre>
 
 <hr/>
-<strong>▶️ How to Run</strong>
-Run all tests
+
+<h2>▶️ How to Run</h2>
+
+<h3>Run all tests</h3>
+
+<pre>
 mvn test
+</pre>
 
-Run a single test
-
-Right-click the test file →
-<strong>Run As → JUnit Test</strong>
+<h3>Run a single test (Eclipse / IntelliJ / VS Code)</h3>
+<p>Right-click the test file → <strong>Run As → JUnit Test</strong></p>
 
 <hr/>
-<strong>📘 About This Project</strong>
 
-This project demonstrates real-world concepts of:
+<h2>📘 About This Project</h2>
 
-Authentication testing
-
-Session and cookie handling
-
-Automation framework development
-
-Page Object Model (POM) design
-
-Utility-driven modular automation
-
-It is suitable for academic projects, internship portfolios, and QA automation resumes.
-
+<p>
+This automation suite demonstrates real-world concepts related to web authentication, 
+session lifecycle, cookie-based security, and automation framework development.
+It is suitable for academic projects, automation portfolios, and QA engineering interviews.
+</p>
