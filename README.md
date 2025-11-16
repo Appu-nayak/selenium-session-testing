@@ -1,9 +1,12 @@
-Session Management & Cookie Handling Automation (Java + Selenium)
+🚀 <strong>Session Management & Cookie Handling Automation (Java + Selenium)</strong>
 
-This project implements an automated test suite using Java, Selenium WebDriver, JUnit 5, and Maven to validate login flow, session creation, cookie handling, and logout behavior in a sample web application. It follows the Page Object Model (POM) for maintainability and clear separation of concerns.
+Automated end-to-end testing framework built using <strong>Java, Selenium WebDriver, Maven, and JUnit 5</strong> to validate login flow, session creation, cookie handling, session expiration, and logout behavior of a sample web application.
 
-Features
-Login Scenarios
+<hr/>
+<strong>🔧 Tech Stack</strong>
+<table> <tr> <td><strong>Java</strong></td> <td>Core programming language</td> </tr> <tr> <td><strong>Selenium WebDriver</strong></td> <td>Browser automation</td> </tr> <tr> <td><strong>JUnit 5</strong></td> <td>Test execution & assertions</td> </tr> <tr> <td><strong>Maven</strong></td> <td>Build & dependency management</td> </tr> <tr> <td><strong>WebDriverManager</strong></td> <td>Automatic driver handling</td> </tr> </table> <hr/>
+<strong>✨ Features</strong>
+<strong>✔ Login Scenarios</strong>
 
 Valid login
 
@@ -13,60 +16,75 @@ Login without cookies
 
 Fake session cookie injection
 
-Session Management
+<strong>✔ Session Management</strong>
 
 Detect session cookies
 
 Simulate session expiry by deleting cookies
 
-Validate access restrictions after session expiry
+Validate access restrictions after expiry
 
-Logout Verification
+<strong>✔ Logout Verification</strong>
 
-Ensure session cookie is removed
+Verify session cookie is removed
 
-Verify redirection to login page after logout
+Ensure user is redirected to login page
 
-Framework Design
+<strong>✔ Framework Design</strong>
 
-Page Object Model (POM) structure
+Page Object Model (POM) architecture
 
-Utility classes for cookie and storage inspection
+Reusable utility modules (CookieUtils, StorageUtils)
 
-Centralized configuration for base URL, credentials, and session cookie name
+Centralized configuration (BASE_URL, cookie names, locators)
 
-Uses WebDriverManager for driver handling
+Compatible with multiple Chrome versions
 
-Tech Stack
-Technology	Purpose
-Java	Programming language
-Selenium WebDriver	Browser automation
-JUnit 5	Test execution & assertions
-Maven	Build & dependency management
-WebDriverManager	Automatic driver setup
-Project Structure
+<hr/>
+<strong>📁 Project Structure</strong>
 session-management-tests
 │── src
 │   └── main/java/com/example/sessiontest
 │        ├── config
+│        │     └── Config.java
 │        ├── drivers
+│        │     └── DriverFactory.java
 │        ├── pages
+│        │     ├── LoginPage.java
+│        │     └── HomePage.java
 │        ├── utils
+│        │     ├── CookieUtils.java
+│        │     └── StorageUtils.java
 │        └── tests
+│              └── SessionManagementTest.java
 │
 │── pom.xml
 │── .gitignore
 │── README.md
 
-How to Run the Tests
+<hr/>
+<strong>▶️ How to Run</strong>
 Run all tests
 mvn test
 
-Run a single test (Eclipse, IntelliJ, or VS Code)
+Run a single test
 
 Right-click the test file →
-Run as → JUnit Test
+<strong>Run As → JUnit Test</strong>
 
-About the Project
+<hr/>
+<strong>📘 About This Project</strong>
 
-This automation project demonstrates practical testing of authentication workflows and backend session mechanisms. The structure and tools used align with real-world QA automation frameworks.
+This project demonstrates real-world concepts of:
+
+Authentication testing
+
+Session and cookie handling
+
+Automation framework development
+
+Page Object Model (POM) design
+
+Utility-driven modular automation
+
+It is suitable for academic projects, internship portfolios, and QA automation resumes.
