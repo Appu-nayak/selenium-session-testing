@@ -62,6 +62,7 @@ session-management-tests
 │── .gitignore
 │── README.md
 
+
 <hr/>
 <strong>▶️ How to Run</strong>
 Run all tests
@@ -88,3 +89,4 @@ Page Object Model (POM) design
 Utility-driven modular automation
 
 It is suitable for academic projects, internship portfolios, and QA automation resumes.
+
